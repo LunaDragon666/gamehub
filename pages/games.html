@@ -6,10 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A homepage for a fictive gameshop where new- and used games are on sale." />
     <title>Gamehub | Games</title>
-    <link href="../css/pages/games.css" rel="stylesheet">
+    <link href="../css/styles.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 <body>
-    <!-- Hello -->
+    <header>
+        <div class="logo-container">
+            <a href="../index.html">
+                <img src="../img/logo.svg" alt="game console"> 
+                Gamehub
+            </a>
+        </div>
+        <!-- hamburger menu -->
+        <div class="nav-container">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fas fa-bars"></i>
+        </span>
+        <nav class="navbar">
+        <ul class="main-nav" id="js-menu">
+            <li>
+                <a href="../index.html" class="nav-links">Home</a>
+            </li>
+            <li>
+                <a href="../pages/games.html" class="nav-links" id="active">Games</a>
+            </li>
+            <li>
+                <a href="#" class="nav-links">About</a>
+            </li>
+            <li>
+                <a href="#" class="nav-links">Contact</a>
+            </li>
+        </ul>
+        </nav>
+        </div>
+        <section class="user-section">
+            <form class="searchbar">
+                <input class="search-input" placeholder="search ...">
+                <button class="searchbtn"><i class="fas fa-search"></i></button>
+            </form>
+            <div>
+                <a href="#"><i class="fas fa-user"></i></a>
+                <a href="#"><i class="fas fa-heart"></i></a>
+                <a href="#"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+        </section>
+    </header>  
+    <main>
+
+    </main>
+    <footer>Copyright © 2020</footer>
+    <script src="../js/script.js"></script>
 </body>
 </html>
