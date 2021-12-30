@@ -1,2 +1,2 @@
-# gamehub
-A cross-course project from 1st year.
+# GameHub
+The universe of games. 
