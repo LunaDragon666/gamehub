@@ -7,7 +7,7 @@
 html, body {
     background: #040d3e;
     color: white;
-    font-family: sans-serif;
+    font-family: "Roboto Mono", 'monospace';
 }
 
 body {
@@ -37,6 +37,18 @@ main {
     margin-top: -1rem;
     min-height: 50vh;
     position: relative;
+    filter: brightness(1);
+    color: white;
+}
+
+.home-intro::before {
+    content: '';
+    display: block;
+    position: absolute;
+    background-color: #000;
+    opacity: 0.25;
+    width: 100%;
+    height: 100%;
 }
 
 .home-content {
@@ -101,7 +113,7 @@ form {
     background: #d90de1;
     color: white;
     cursor: pointer;
-    padding: 0.3rem 0.5rem;
+    padding: 0.3rem 0.5rem 0.4rem 0.6rem;
     transition: 1s;
 }
 
@@ -110,12 +122,13 @@ form {
 }
 
 .search-input {
+    font-family: "Roboto Mono", 'monospace';
     padding: 0.3rem 0.5rem;
     width: 100px;
 }
 
 main {
-    max-width: 1024px;
+    max-width: 1280px;
     margin: 0 auto;
 }
 
@@ -125,7 +138,7 @@ main {
 
 .intro-content {
     position: absolute;
-    top: 20%;
+    top: 25%;
     padding: 2rem 3rem;
 }
 
@@ -140,22 +153,47 @@ main {
     color: #01051a;
     flex: 1;
     min-width: 250px;
+    position: relative;
+}
+
+#wishlist {
+    background: #ff00a0;
+    padding: 0.5rem 0.7rem 0.6rem 0.75rem;
+    color: white;
+    cursor: pointer;
+    font-size: 1.4rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+#wishlist:hover {
+    background: white;
+    color: #ff00a0;
 }
 
 .game img {
+    transition: 0.5s;
     width: 100%;
+}
+
+.game img:hover {
+filter: brightness(0.5);
 }
 
 .cta {
     background: #3f24d7;
     color: white;
     display: block;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     margin: 30px auto;
     max-width: 200px;
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
+    text-transform: uppercase;
     transition: background-color 1s;
 }
 
@@ -200,12 +238,6 @@ main {
     font-weight: normal;
     margin-left: 1rem;
     text-decoration: line-through;
-}
-
-.precent {
-    background: #d90de1;
-    font-size: 0.7rem;
-    padding: 0.25rem 1rem;
 }
 
 .buybtn {
@@ -276,27 +308,27 @@ a.nav-links:hover {
     display: block;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1280px) {
+    form.searchbar {
+        margin-right: 14rem;
+    }
     header, .user-section {
-        justify-content: space-evenly;
+        justify-content: space-around;
     }
     .game_container {
         padding: 3rem 0 4rem;
     }
-}
-
-@media screen and (min-width: 768px) {
-    .search-input {
-        width: 250px;
-    }
     .user-section a, form {
         padding: 0 2.75rem;
     }
+    .logo-container {
+        margin-right: 10rem;
+    }
     .logo-container img {
-        margin: 10px 15px 10px 20px;
+        margin: 10px 15px 10px 15px;
     }
     .home-intro {
-        min-height: 34vh;
+        min-height: 45vh;
     }
     .user-section a, form {
         padding: 0 1.25rem;
@@ -304,15 +336,18 @@ a.nav-links:hover {
 }
 
 @media screen and (min-width: 768px) {
+    .search-input {
+        width: 250px;
+    }
     .navbar {
         display: flex;
         justify-content: space-between;
         padding-bottom: 0;
         height: 70px;
         align-items: center;
-        margin-right: 20px;
         position: unset;
         background: none;
+        margin-right: 15px;
     }
 
     .main-nav {
