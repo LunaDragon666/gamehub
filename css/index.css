@@ -1,1 +1,104 @@
+html, body {
+    background: black;
+    color: white;
+    font-family: sans-serif;
+    margin: 0;
+}
+
 /* Hello */ 
+.logo-container img {
+    max-width: 75px;
+    margin: 10px;
+}
+
+header {
+    align-items: center;
+    background: blue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo-container a {
+    align-items: center;
+    display: flex;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.user-section {
+    background: green;
+    display: flex;
+    justify-content: space-between;
+    flex: 0 0 100%;
+}
+
+.user-section a {
+    color: black;
+    display: inline-block;
+    padding: 10px;
+}
+
+form {
+    align-items: center;
+    display: flex;
+    margin: 0 0.5rem;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.home-intro h1 {
+    text-align: center;
+}
+
+.games {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.game {
+    flex: 1;
+    min-width: 250px;
+}
+
+.game img {
+    width: 100%;
+}
+
+.cta {
+    background: blue;
+    color: white;
+    display: block;
+    font-size: 1.3rem;
+    margin: 30px auto;
+    max-width: 200px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 1s;
+}
+
+.cta:hover {
+    background-color: brown;
+}
+
+nav {
+    display: flex;
+}
+
+nav a, .account-details a {
+    padding: 0 1rem;
+}
+
+.account-details {
+    display: flex;
+}
