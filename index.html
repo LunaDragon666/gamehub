@@ -17,50 +17,79 @@
                 Gamehub
             </a>
         </div>
-        <!-- Add hamburger menu here -->
-        <nav>
-            <a href="#">Home</a>
-            <a href="pages/games.html">Games</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
+        <!-- hamburger menu -->
+        <div class="nav-container">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fas fa-bars"></i>
+        </span>
+        <nav class="navbar">
+        <ul class="main-nav" id="js-menu">
+            <li>
+                <a href="index.html" class="nav-links" id="active">Home</a>
+            </li>
+            <li>
+                <a href="pages/games.html" class="nav-links">Games</a>
+            </li>
+            <li>
+                <a href="#" class="nav-links">About</a>
+            </li>
+            <li>
+                <a href="#" class="nav-links">Contact</a>
+            </li>
+        </ul>
         </nav>
+        </div>
         <section class="user-section">
             <form class="searchbar">
                 <input class="search-input" placeholder="search ...">
-                <button class="searchbtn">Button</button>
+                <button class="searchbtn"><i class="fas fa-search"></i></button>
             </form>
             <div>
-                <a href="#">Account</a>
-                <a href="#">Checkout</a>
+                <a href="#"><i class="fas fa-user"></i></a>
+                <a href="#"><i class="fas fa-heart"></i></a>
+                <a href="#"><i class="fas fa-shopping-cart"></i></a>
             </div>
         </section>
     </header>  
     <main>
         <section class="home-intro">
+            <div class="intro-content">
             <h1>Hello</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
             <a class="cta" href="pages/games.html">View our games</a>
+            </div>
         </section>
-        <section>
+        <section class="game_container">
             <h2>Featured games</h2>
             <div class="games">
                 <div class="game">
-                    <img src="img/game.jpg" alt="game title"> 
-                    <h3>Game title</h3>
-                    <p>Price</p>
+                    <a href="#">
+                        <img src="img/game.jpg" alt="game title"> 
+                    </a>
+                    <h3>Dark Souls III Steam Key GLOBAL</h3>
+                    <p class="default-price">$ 21.76</p>
+                    <button class="buybtn"><i class="fas fa-shopping-cart"></i>
                 </div>
                 <div class="game">
-                    <img src="img/game.jpg" alt="game title"> 
-                    <h3>Game title</h3>
-                    <p>Price</p>
+                    <a href="#">
+                        <img src="img/game.jpg" alt="game title"> 
+                    </a> 
+                    <h3>Dark Souls III Steam Key GLOBAL</h3>
+                    <p class="default-price">$ 21.76</p>
+                    <button class="buybtn"><i class="fas fa-shopping-cart"></i>
                 </div>
                 <div class="game">
-                    <img src="img/game.jpg" alt="game title"> 
-                    <h3>Game title</h3>
-                    <p>Price</p>
+                    <a href="#">
+                        <img src="img/game.jpg" alt="game title"> 
+                    </a>
+                    <h3>Dark Souls III Steam Key GLOBAL</h3>
+                    <p class="price"><span class="discount">$ 21.76 <span class="old-price">$ 25.98</span></span> <span class="precent">- 00 %</span></p>
+                    <button class="buybtn"><i class="fas fa-shopping-cart"></i></button>
                 </div>
             </div>
         </section>
     </main>
+    <footer>Copyright © 2020</footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
