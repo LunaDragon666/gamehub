@@ -141,7 +141,7 @@ main {
 
 .intro-content {
     position: absolute;
-    top: 25%;
+    top: 35%;
     padding: 2rem 3rem;
 }
 
@@ -319,7 +319,7 @@ a.nav-links:hover {
         justify-content: space-around;
     }
     .game_container {
-        padding: 3rem 0 4rem;
+        padding: 2rem 0 5rem;
     }
     .user-section a, form {
         padding: 0 2.75rem;
@@ -332,7 +332,7 @@ a.nav-links:hover {
     }
     .home-intro {
         margin-top: 7rem;
-        min-height: 45vh;
+        min-height: 60vh;
     }
     .user-section a, form {
         padding: 0 1.25rem;
