@@ -121,7 +121,7 @@ header a {
     background: #d90de1;
     color: white;
     cursor: pointer;
-    height: 50px;
+    height: 40px;
     padding: 0.3rem 0.5rem 0.4rem 0.6rem;
     transition: 1s;
 }
@@ -132,7 +132,7 @@ header a {
 
 .search-input {
     font-family: "Roboto Mono", 'monospace';
-    height: 50px;
+    height: 40px;
     padding: 0.3rem 0.5rem;
     width: 125px;
 }
