@@ -131,6 +131,7 @@ header a {
 
 .search-input {
     font-family: "Roboto Mono", 'monospace';
+    height: 27.5px;
     padding: 0.3rem 0.5rem;
     width: 125px;
 }
@@ -142,7 +143,7 @@ header a {
 .intro-content {
     position: absolute;
     top: 35%;
-    right: 25%;
+    right: 0;
     padding: 2rem 3rem;
 }
 
@@ -358,6 +359,10 @@ a.nav-links:hover {
 }
 
 @media screen and (min-width: 1280px) {
+    .intro-content {
+        top: 35%;
+        right: 25%;
+    }
     .categories {
     display: block;
 }
