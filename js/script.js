@@ -24,7 +24,7 @@ document.querySelector(".loading").innerHTML = "";
       productContainer.innerHTML += `
                                     <article class="game">
                                       <i class="fas fa-heart" id="wishlist"></i>
-                                      <a href="#">
+                                      <a href="a href="productDetails.html?id=${product.id}" class="product"">
                                         <img src="${product.images[0].src}" alt="${product.name}"> 
                                       </a>
                                       <h3 class="gametitle">${product.name}</h3>
