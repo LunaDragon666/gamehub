@@ -121,6 +121,7 @@ header a {
     background: #d90de1;
     color: white;
     cursor: pointer;
+    height: 30px;
     padding: 0.3rem 0.5rem 0.4rem 0.6rem;
     transition: 1s;
 }
@@ -131,7 +132,7 @@ header a {
 
 .search-input {
     font-family: "Roboto Mono", 'monospace';
-    height: 27.5px;
+    height: 30px;
     padding: 0.3rem 0.5rem;
     width: 125px;
 }
@@ -359,6 +360,13 @@ a.nav-links:hover {
 }
 
 @media screen and (min-width: 1280px) {
+    .search-button {
+        height: 27.5px;
+    }
+    .search-input {
+        height: 27.5px;
+    }
+
     .intro-content {
         top: 35%;
         right: 25%;
