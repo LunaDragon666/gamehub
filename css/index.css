@@ -17,11 +17,13 @@ body {
 }
 
 main {
-    flex: 1 1 100%;
     padding: 1rem 0 3rem;
+    flex: 1 1 100%;
 }
 
 .game_container {
+    margin: 0 auto;
+    max-width: 1280px;
     padding: 2rem 2rem 2rem;
 }
 
@@ -39,6 +41,8 @@ main {
     position: relative;
     filter: brightness(1);
     color: white;
+    margin: 0 auto;
+    max-width: 1280px;
 }
 
 .home-intro::before {
@@ -102,17 +106,17 @@ header a {
     text-underline-offset: 5px;
 }
 
-form {
+.searchbar {
     align-items: center;
     display: flex;
 }
 
-.search-input, .searchbtn {
+.search-input, .search-button {
     border: none;
     padding: 0.25rem 0;
 }
 
-.searchbtn {
+.search-button {
     background: #d90de1;
     color: white;
     cursor: pointer;
@@ -120,7 +124,7 @@ form {
     transition: 1s;
 }
 
-.searchbtn:hover {
+.searc-button:hover {
     background: #ff007b;
 }
 
@@ -128,11 +132,6 @@ form {
     font-family: "Roboto Mono", 'monospace';
     padding: 0.3rem 0.5rem;
     width: 100px;
-}
-
-main {
-    max-width: 1280px;
-    margin: 0 auto;
 }
 
 .home-intro h1 {
@@ -178,6 +177,7 @@ main {
 }
 
 .game img {
+    height: 75%;
     transition: 0.5s;
     width: 100%;
 }
@@ -263,7 +263,7 @@ filter: brightness(0.5);
 
 footer {
     background: #01051a;
-    padding: 1rem 0;
+    padding: 2.5rem 7.5rem;
     text-align: center;
 }
 
@@ -311,8 +311,20 @@ a.nav-links:hover {
     display: block;
 }
 
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.footer div {
+    padding: 1rem;
+}
+
+
+
 @media screen and (min-width: 1280px) {
-    form.searchbar {
+    .search {
         margin-right: 14rem;
     }
     header, .user-section {
@@ -321,7 +333,7 @@ a.nav-links:hover {
     .game_container {
         padding: 2rem 0 5rem;
     }
-    .user-section a, form {
+    .user-section a, .search_form {
         padding: 0 2.75rem;
     }
     .logo-container {
@@ -334,13 +346,13 @@ a.nav-links:hover {
         margin-top: 7rem;
         min-height: 60vh;
     }
-    .user-section a, form {
+    .user-section a, .search_form {
         padding: 0 1.25rem;
     }
 }
 
 @media screen and (min-width: 768px) {
-    .searchbtn {
+    .search-button {
         padding: 0.4rem 0.5rem 0.4rem 0.6rem;
     }
     .search-input {
