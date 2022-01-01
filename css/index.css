@@ -5,7 +5,7 @@
 }
 
 html, body {
-    background: #040d3e;
+    background: #020d1c;
     color: white;
     font-family: "Roboto Mono", 'monospace';
 }
@@ -61,7 +61,7 @@ main {
 
 header {
     align-items: center;
-    background: #01051a;
+    background: #010812;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -83,11 +83,11 @@ header a {
 }
 
 .user-section {
-    background: #030826;
+    background: #020d1c;
     display: flex;
     justify-content: space-between;
     flex: 0 0 100%;
-    padding: 1.25rem 0;
+    padding: 1.75rem 0;
 }
 
 .user-section a {
@@ -109,6 +109,7 @@ header a {
 .searchbar {
     align-items: center;
     display: flex;
+    margin-left: 1rem;
 }
 
 .search-input, .search-button {
@@ -145,17 +146,16 @@ header a {
 }
 
 .games {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    margin-top: -5rem;
+    display: grid;
+    grid-gap: 1.25rem;
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    grid-template-rows: 1fr;
+    margin-top: -6rem;
 }
 
 .game {
-    background: #7393B3;
-    color: #01051a;
-    flex: 1;
-    min-width: 250px;
+    background: #061b36;
+    color: white;
     position: relative;
 }
 
@@ -178,7 +178,7 @@ header a {
 }
 
 .game img {
-    height: 75%;
+    height: 69%;
     transition: 0.5s;
     width: 100%;
 }
@@ -210,7 +210,9 @@ filter: brightness(0.5);
 }
 
 .game_container h3 {
+    height: 75px;
     padding-bottom: 1.5rem;
+    padding-top: 0.75rem;
 }
 
 .game_container h3, .game_container p {
@@ -218,38 +220,19 @@ filter: brightness(0.5);
     padding-right: 1rem;
 }
 
-.game_container h3 {
-    padding-top: 1rem;
-}
-
 .game_container p {
-    padding-bottom: 2.1rem;
-}
-
-.price {
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-}
-
-.discount, .default-price {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.old-price {
-    font-size: 1rem;
-    font-weight: normal;
-    margin-left: 1rem;
-    text-decoration: line-through;
+    font-size: 1.4rem;
+    padding-bottom: 2.6rem;
 }
 
 .buybtn {
     background: #d90de1;
     border: none;
+    bottom: 0;
     color: white;
     cursor: pointer;
     padding: 0.75rem 0;
+    position: absolute;
     transition: 1s;
     width: 100%;
 }
@@ -320,6 +303,7 @@ a.nav-links:hover {
 
 .footer div {
     padding: 1rem;
+    min-width: 250px;
 }
 
 .loading {
@@ -372,6 +356,12 @@ a.nav-links:hover {
 }
 
 @media screen and (min-width: 1280px) {
+    .searchbar {
+        margin: 0;
+    }
+    .game img {
+        height: 64%;
+    }
     .search {
         margin-right: 14rem;
     }
@@ -381,9 +371,6 @@ a.nav-links:hover {
     .game_container {
         padding: 2rem 0 5rem;
     }
-    .user-section a, .search_form {
-        padding: 0 2.75rem;
-    }
     .logo-container {
         margin-right: 10rem;
     }
@@ -391,11 +378,8 @@ a.nav-links:hover {
         margin: 10px 15px 10px 15px;
     }
     .home-intro {
-        margin-top: 7rem;
+        margin-top: 9rem;
         min-height: 60vh;
-    }
-    .user-section a, .search_form {
-        padding: 0 1.25rem;
     }
 }
 
