@@ -142,6 +142,7 @@ header a {
 .intro-content {
     position: absolute;
     top: 35%;
+    right: 25%;
     padding: 2rem 3rem;
 }
 
