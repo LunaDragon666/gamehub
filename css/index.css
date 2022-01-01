@@ -100,6 +100,10 @@ header a {
     color: #ff007b;
 }
 
+.user-links a {
+    font-size: 1.4rem;
+}
+
 #active {
     font-weight: bold;
     text-decoration: underline 1px solid #ff007b;
@@ -360,6 +364,9 @@ a.nav-links:hover {
 }
 
 @media screen and (min-width: 1280px) {
+    .user-links a {
+        font-size: 1.2rem;
+    }
     .search-button {
         height: 27.5px;
     }
