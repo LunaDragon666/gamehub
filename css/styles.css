@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 
 /* index.html CSS-file */
-@import "index.css"; 
+@import "pages/index.css"; 
+@import "imports/nav.css";
+@import "imports/variables.css";
