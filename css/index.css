@@ -350,12 +350,16 @@ a.nav-links:hover {
 }
 
 .categories {
+    display: none;
     font-family: "Roboto Mono", 'monospace';
     height: 40px;
     padding: 0 1rem;
 }
 
 @media screen and (min-width: 1280px) {
+    .categories {
+    display: block;
+}
     .searchbar {
         margin: 0;
     }
