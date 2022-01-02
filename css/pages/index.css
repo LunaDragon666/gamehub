@@ -170,7 +170,7 @@ filter: brightness(0.5);
     }
 
     .game_container p {
-        padding-bottom: 1rem;
+        padding-bottom: 0;
     }
 
     .categories {
