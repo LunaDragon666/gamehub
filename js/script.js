@@ -1,11 +1,9 @@
-//import theError from "..."; 
+// Hamburger menu functions
+let nav = document.getElementById('js-menu');
+let navToggle = document.getElementById('js-navbar-toggle');
 
-// Hello
-let mainNav = document.getElementById('js-menu');
-let navBarToggle = document.getElementById('js-navbar-toggle');
-
-navBarToggle.addEventListener('click', function () {
-  mainNav.classList.toggle('active');
+navToggle.addEventListener('click', function () {
+  nav.classList.toggle('active');
 });
 
 // ... 
