@@ -41,6 +41,10 @@
     padding: 2rem 3rem;
 }
 
+.intro-content p {
+    text-align: center;
+}
+
 .games {
     display: grid;
     grid-gap: 1.25rem;
