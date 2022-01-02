@@ -132,6 +132,10 @@ a.nav-links:hover {
 }
 
 @media screen and (min-width: 1280px) {
+    .user-links {
+        margin-top: 0.25rem;
+        }
+        
     .search-button {
         height: 27.5px;
     }
