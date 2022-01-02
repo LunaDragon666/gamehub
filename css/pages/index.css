@@ -148,13 +148,14 @@ filter: brightness(0.5);
   .heading {
     align-items: center;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
 }
 
 .categories {
     font-family: "Roboto Mono", 'monospace';
     height: 40px;
+    margin: 1rem 0 2rem;
     padding: 0 1rem;
 }
 
@@ -184,9 +185,6 @@ filter: brightness(0.5);
     .user-links {
         margin-top: 0.5rem;
         }
-        .heading {
-            flex-direction: column;
-        }
 
 }
 
@@ -201,5 +199,8 @@ filter: brightness(0.5);
     .home-intro {
         margin-top: 9rem;
         min-height: 60vh;
+    }
+    .heading {
+        flex-direction: row;
     }
 }
