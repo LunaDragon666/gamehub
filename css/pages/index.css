@@ -185,7 +185,7 @@ filter: brightness(0.5);
         right: 25%;
     }
     .game img {
-        height: 64%;
+        height: 50%;
     }
     .game_container {
         padding: 2rem 0 5rem;
