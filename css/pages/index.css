@@ -175,7 +175,7 @@ filter: brightness(0.5);
     }
 
     .categories {
-        display: block;
+        margin: 0;
     }
 
     .game img {
@@ -184,6 +184,10 @@ filter: brightness(0.5);
 
     .user-links {
         margin-top: 0.5rem;
+        }
+        .heading {
+            flex-direction: row;
+            margin: 0;
         }
 
 }
@@ -199,8 +203,5 @@ filter: brightness(0.5);
     .home-intro {
         margin-top: 9rem;
         min-height: 60vh;
-    }
-    .heading {
-        flex-direction: row;
     }
 }
