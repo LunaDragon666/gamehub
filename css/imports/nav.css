@@ -163,10 +163,10 @@ a.nav-links:hover {
 
 @media screen and (min-width: 768px) {
     .user-links a {
-        font-size: 1.2rem;
+        font-size: 1.25rem;
         padding: 1rem;
     }
-    
+
     .search-button {
         padding: 0.4rem 0.5rem 0.4rem 0.6rem;
     }
