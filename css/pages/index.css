@@ -7,8 +7,8 @@
 .home-intro {
     background: url("../../img/headers/header.jpg") center bottom no-repeat;
     background-size: cover;
-    margin-top: 9rem;
-    min-height: 70vh;
+    margin-top: 10rem;
+    min-height: 75vh;
     position: relative;
     filter: brightness(1);
     color: var(--text-color);
