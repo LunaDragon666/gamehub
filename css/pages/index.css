@@ -168,6 +168,10 @@ filter: brightness(0.5);
         top: 35%;
         right: 20%;
     }
+    
+    .categories {
+        display: block;
+    }
 
 }
 
@@ -176,9 +180,6 @@ filter: brightness(0.5);
         top: 35%;
         right: 25%;
     }
-    .categories {
-    display: block;
-}
     .game img {
         height: 64%;
     }
