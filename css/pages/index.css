@@ -157,6 +157,13 @@ filter: brightness(0.5);
     height: 40px;
     padding: 0 1rem;
 }
+@media screen and (min-width: 768px) { 
+    .intro-content {
+        min-height: 60vh;
+        top: 35%;
+        right: 25%;
+    }
+}
 
 @media screen and (min-width: 1280px) {
     .intro-content {
