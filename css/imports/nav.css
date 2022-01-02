@@ -125,6 +125,10 @@ a.nav-links:hover {
     transition: 0.5s;
 }
 
+.user-section a, .searchbar {
+    padding: 0 1.2rem;
+}
+
 .user-section a:hover {
     color: var(--hover-color);
 }
@@ -135,6 +139,7 @@ a.nav-links:hover {
     padding: 0.25rem;
 }
 
+/* MEDIA QUERIES */
 @media screen and (min-width: 1280px) {
 header, .user-section {
     justify-content: space-around;
@@ -161,7 +166,7 @@ header, .user-section {
 }
 /* User section */
 .user-links {
-    margin-top: 0.25rem;
+    margin-top: 0.75rem;
    }    
 }
 
