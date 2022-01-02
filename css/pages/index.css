@@ -157,12 +157,18 @@ filter: brightness(0.5);
     height: 40px;
     padding: 0 1rem;
 }
+
 @media screen and (min-width: 768px) { 
-    .intro-content {
+    .home-intro {
+        margin-top: 9rem;
         min-height: 100vh;
+    }
+
+    .intro-content {
         top: 35%;
         right: 25%;
     }
+
 }
 
 @media screen and (min-width: 1280px) {
